@@ -1,0 +1,534 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+main {
+  font-family: "Nova Square", cursive;
+  height: 1200px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  @media (min-width: 600px) {
+    height: 1400px;
+  }
+  @media (min-width: 800px) {
+    height: 1400px;
+  }
+  @media (min-width: 1000px) {
+    height: 1700px;
+  }
+  @media (min-width: 1100px) {
+    grid-template-columns: repeat(2, 1fr);
+    height: 94.5vh;
+  }
+}
+
+.main__form {
+  background-color: white;
+  border: 1px solid silver;
+  border-radius: 20px;
+  height: 400px;
+  margin: 5% 5% 0% 5%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 15px silver;
+  @media (min-width: 1100px) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 90%;
+    margin: 26px 5% 0% 5%;
+  }
+  @media (min-width: 600px) {
+    height: 500px;
+  }
+  @media (min-width: 1000px) {
+    height: 550px;
+  }
+  @media (min-width: 1100px) {
+    height: 500px;
+  }
+  h1 {
+    font-size: 30px;
+    margin: 5% auto;
+    @media (min-width: 600px) {
+      font-size: 45px;
+    }
+    @media (min-width: 1100px) {
+      margin: 3% auto;
+    }
+  }
+  p {
+    font-size: 15px;
+    margin: 0% auto;
+    @media (min-width: 600px) {
+      font-size: 20px;
+    }
+  }
+}
+
+.main__form__Add {
+  background-color: white;
+  height: 235px;
+  position: relative;
+  top: 4%;
+  @media (min-width: 600px) {
+    height: 300px;
+  }
+  @media (min-width: 1100px) {
+    height: 300px;
+  }
+
+  label {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    @media (min-width: 600px) {
+      font-size: 35px;
+    }
+    @media (min-width: 1100px) {
+      font-size: 30px;
+    }
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    input {
+      margin-top: 20px;
+      text-align: center;
+      @media (min-width: 600px) {
+        margin-top: 25px;
+      }
+      @media (min-width: 800px) {
+        margin-top: 30px;
+      }
+    }
+    input[type="text"] {
+      height: 40px;
+      width: 85%;
+      border-radius: 10px;
+      outline: none;
+      border: 1px solid black;
+      @media (min-width: 600px) {
+        height: 45px;
+        font-size: 20px;
+      }
+      @media (min-width: 1000px) {
+        width: 750px;
+      }
+      @media (min-width: 1100px) {
+        width: 80%;
+      }
+    }
+    input[type="number"] {
+      height: 40px;
+      width: 85%;
+      border-radius: 10px;
+      outline: none;
+      border: 1px solid black;
+      @media (min-width: 600px) {
+        height: 45px;
+        font-size: 20px;
+      }
+      @media (min-width: 1000px) {
+        width: 750px;
+      }
+      @media (min-width: 1100px) {
+        width: 80%;
+      }
+    }
+    input[type="button"] {
+      height: 35px;
+      width: 60%;
+      border-radius: 10px;
+      background-color: #a2d2ff;
+      outline: none;
+      border: none;
+      font-size: 15px;
+      font-weight: bold;
+      &:hover {
+        background-color: lightgreen;
+      }
+      &:active {
+        transform: scale(1.05);
+      }
+      @media (min-width: 600px) {
+        height: 45px;
+        font-size: 20px;
+      }
+      @media (min-width: 1000px) {
+        width: 500px;
+      }
+      @media (min-width: 1100px) {
+        width: 60%;
+        margin-top: 60px;
+        width: 250px;
+      }
+    }
+  }
+}
+
+.main__form__All {
+  background-color: white;
+  height: 400px;
+  width: 90%;
+  margin: 0 5%;
+  position: relative;
+  top: 5%;
+  border: 1px solid silver;
+  border-radius: 20px;
+  box-shadow: 0 0 15px silver;
+  @media (min-width: 1000px) {
+    height: 600px;
+  }
+  @media (min-width: 1100px) {
+    height: 815px;
+    top: 3.2%;
+    width: 95%;
+    margin-right: 0;
+    margin-left: 5%;
+  }
+
+  h2 {
+    margin-top: 20px;
+  }
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 20px;
+    height: 300px;
+    overflow: auto;
+    @media (min-width: 1000px) {
+      height: 500px;
+    }
+    @media (min-width: 1100px) {
+      height: 720px;
+    }
+
+    li {
+      width: 90%;
+      margin: 2px 5% 12px 5%;
+      border-radius: 15px;
+      list-style-type: none;
+      border: 1px solid silver;
+      position: relative;
+      i {
+        position: absolute;
+        top: 35%;
+        right: 8px;
+        font-size: 10px;
+        border: 1px solid black;
+        padding: 5px 7px;
+        border-radius: 50%;
+        color: red;
+        border-color: red;
+        cursor: pointer;
+        &:active {
+          transform: scale(1.05);
+        }
+        @media (min-width: 600px) {
+          font-size: 20px;
+          padding: 6px 8px;
+          top: 30%;
+          right: 2%;
+        }
+        @media (min-width: 800px) {
+          font-size: 25px;
+          padding: 6px 10px;
+          top: 25%;
+          right: 2%;
+        }
+        @media (min-width: 1000px) {
+          font-size: 30px;
+          padding: 8px 12px;
+          top: 26%;
+          right: 1%;
+        }
+        @media (min-width: 1100px) {
+          font-size: 20px;
+          padding: 8px 12px;
+          top: 32%;
+          right: 2%;
+        }
+
+        &:hover {
+          color: white;
+          background-color: red;
+        }
+      }
+      p {
+        font-size: 20px;
+        margin: 5px 10px 10px 10px;
+        text-align: center;
+        overflow: hidden;
+        @media (min-width: 600px) {
+          font-size: 25px;
+        }
+        @media (min-width: 1000px) {
+          font-size: 32px;
+          margin: 5px 10px 20px 10px;
+        }
+      }
+      p::before {
+        content: "";
+        width: 80%;
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        height: 2px;
+        background-color: #a2d2ff;
+        @media (min-width: 450px) {
+          width: 85%;
+        }
+        @media (min-width: 1000px) {
+          width: 87%;
+        }
+        @media (min-width: 1100px) {
+          width: 80%;
+        }
+        @media (min-width: 1500px) {
+          width: 85%;
+        }
+      }
+      h3 {
+        font-size: 15px;
+        margin: 0px 0px 5px 0px;
+        text-align: center;
+        @media (min-width: 600px) {
+          font-size: 20px;
+        }
+        @media (min-width: 1000px) {
+          font-size: 22px;
+          margin: 0px 0px 10px 0px;
+        }
+      }
+    }
+  }
+}
+
+.main__reasult {
+  position: relative;
+  height: 325px;
+  background-color: white;
+  margin: 12% 5% 5% 5%;
+  border-radius: 20px;
+  border: 1px solid silver;
+  box-shadow: 0 0 15px silver;
+  @media (min-width: 1100px) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    top: 61%;
+    height: 250px;
+    margin: 26px 5% 0% 5%;
+  }
+  @media (min-width: 600px) {
+    height: 350px;
+    margin: 8% 5% 5% 5%;
+  }
+  @media (min-width: 1100px) {
+    height: 282px;
+    margin: 2% 5% 5% 5%;
+  }
+
+  input {
+    border-radius: 15px;
+  }
+  i {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    @media (min-width: 600px) {
+      font-size: 35px;
+    }
+    @media (min-width: 1100px) {
+      font-size: 30px;
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    color: black;
+  }
+  50% {
+    color: #00a6fb;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.main__reasult__circle {
+  width: 270px;
+  height: 270px;
+  background-color: #a2d2ff;
+  position: relative;
+  top: 8%;
+  margin: 0% auto;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 10px #a2d2ff;
+  @media (min-width: 600px) {
+    width: 300px;
+    height: 300px;
+  }
+  @media (min-width: 800px) {
+    width: 500px;
+    height: 300px;
+  }
+  @media (min-width: 1100px) {
+    width: 300px;
+    height: 250px;
+    top: 5%;
+  }
+  p {
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: white;
+    @media (min-width: 600px) {
+      font-size: 45px;
+    }
+
+    @media (min-width: 800px) {
+      font-size: 50px;
+    }
+    @media (min-width: 1100px) {
+      font-size: 40px;
+    }
+  }
+  p::before {
+    content: "";
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    height: 2px;
+    background-color: black;
+  }
+  input {
+    text-align: center;
+    font-size: 40px;
+    border: none;
+    background: none;
+    outline: none;
+    width: 200px;
+    outline-color: red;
+    font-weight: bold;
+    @media (min-width: 800px) {
+      width: 250px;
+    }
+    @media (min-width: 600px) {
+      font-size: 45px;
+    }
+    @media (min-width: 800px) {
+      font-size: 50px;
+    }
+    @media (min-width: 1100px) {
+      font-size: 40px;
+      width: 300px;
+    }
+  }
+}
+
+.main__reasult__add {
+  width: 270px;
+  height: 270px;
+  background-color: #a2d2ff;
+  position: relative;
+  top: 8%;
+  margin: 0% auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 10px #a2d2ff;
+  @media (min-width: 600px) {
+    width: 300px;
+    height: 300px;
+  }
+  @media (min-width: 800px) {
+    width: 500px;
+    height: 300px;
+  }
+  @media (min-width: 1100px) {
+    width: 300px;
+    height: 250px;
+    top: 5%;
+  }
+
+  label {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 25%;
+    @media (min-width: 800px) {
+      font-size: 30px;
+      top: 20%;
+    }
+    @media (min-width: 1100px) {
+      top: 22%;
+      font-size: 25px;
+    }
+  }
+
+  #input3 {
+    position: absolute;
+    top: 45%;
+    height: 40px;
+    width: 200px;
+    padding-left: 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    @media (min-width: 800px) {
+      width: 250px;
+    }
+    @media (min-width: 1100px) {
+      width: 220px;
+    }
+  }
+
+  #Btn3 {
+    position: absolute;
+    top: 75%;
+    height: 30px;
+    width: 90px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    @media (min-width: 800px) {
+      width: 150px;
+    }
+    @media (min-width: 1100px) {
+      width: 120px;
+    }
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+    &:active {
+      transform: scale(1.05);
+    }
+  }
+}

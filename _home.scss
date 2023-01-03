@@ -1,0 +1,193 @@
+
+ .main__container {
+    background-image: url('carrots-g1bc4c6b8c_1920.jpg');
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    h1{
+        font-size: 80px;
+        color: white;
+        position: absolute;
+        top: 30%;
+    }
+    p{
+        font-size: 33px;
+        color: white;
+        position: absolute;
+        top: 53%;
+        font-weight: 600;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 70%;
+        border-radius: 10px;
+        padding: 5px 20px 5px 20px;
+        background-color: black;
+        font-weight: 600;
+        }
+        a:hover{
+         transform: scale(1.05);   
+        }
+        @media (max-width: 450px){
+            h1{
+                top: 22%;
+                font-size: 50px;
+            }
+            p{
+                top: 45%;
+                font-size: 18px;
+            }
+            a{
+                top: 60%;
+                font-size: 15px;
+            }
+        }
+        @media (min-width: 1300px){
+            h1{
+                top: 20%;
+                font-size: 100px;
+            }
+            p{
+                top: 50%;
+                font-size: 35px;
+            }
+            a{
+                top: 65%;
+            }
+        }
+
+        @media (min-width: 1600px){
+            h1{
+                top: 18%;
+                font-size: 120px;
+            }
+            p{
+                top: 50%;
+                font-size: 40px;
+            }
+            a{
+                top: 68%;
+                font-size: 25px;
+            }
+        }
+        @media (max-height:600px){
+            @media (orientation: landscape) {
+                h1{
+                    top: 8%;
+                    font-size: 70px;
+                }
+                 p{
+                    top: 48%;
+                    font-size: 25px;
+                 }
+                 a{
+                   top: 72%;
+                 }
+              }
+        }
+    
+ }
+
+ .main__About{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 42vh;
+    position: relative;
+    background: linear-gradient(to right, white, white);
+    overflow: auto;
+    h1{
+        position: absolute;
+        top: 6%;
+        font-size: 40px;
+        font-weight: bold;
+        color: black;
+    }
+    p{
+        position: absolute;
+        top: 23%;
+        text-align: justify;
+        padding: 0px 20px 0px 20px;
+        font-weight: 500;
+        font-size: 25px;
+        color: black;
+        
+    }
+    @media (min-width: 250px){
+        h1{
+            font-size: 25px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+
+    @media (min-width: 500px){
+        h1{
+            font-size: 35px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    @media (min-width: 750px){
+        h1{
+            font-size: 40px;
+        }
+        p{
+            font-size: 25px;
+        }
+    }
+
+    @media (min-width: 1350px){
+        h1{
+            font-size: 45px;
+        }
+        p{
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+
+    @media (max-height:500px){
+        h1{
+            font-size: 20px;
+        }
+        p{
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+ }
+ 
+ 
+ 
+ 
+ footer{
+   position: absolute;
+   bottom: -1;
+   background-color: white;
+   color: black;
+   width: 100%;
+   border-top: 1px solid black;
+   P{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+   }
+   @media (max-height:500px){
+    font-size: 10px;
+    height: 1%;
+  }
+ }

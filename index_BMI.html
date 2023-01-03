@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="main_BMI.css">
+    <script src="https://kit.fontawesome.com/3517b05ecb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="nav">
+        <div class="nav__logo"><a href="index_BMI.html">FitApp</a></div>
+        <input id="nav__menu-toggle" type="checkbox" />
+        <label class='nav__menu-button-container' for="nav__menu-toggle">
+        <div class='nav__menu-button'></div>
+        </label>
+        <ul class="nav__menu">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="indexApp.html">App</a></li>
+         <li><a href="indexCalories.html">Calories Calc</a></li>
+         <li><a href="index_BMI.html">BMI Calc</a></li>
+         <li><button class="nav__menu__contact">Contact</button></li>
+       </ul>
+     </header>
+     <main>
+        <div class="main__panel">
+            <div class="main__calc">
+                <h1>Calculator BMI</h1>
+                <form>
+                <input type="number" class="form__input--1" min="0"placeholder="Height (cm)"> 
+                <input type="number" class="form__input--2" min="0" placeholder="Weight (kg)">
+                <input type="button" class="form__input--btn" value="Calculate">
+                </form>
+                <p class="main__reasult"></p>
+            </div>
+            <div class="reasult">
+                <button class="reasult__close">X</button>
+                <h1 class="reasult__h1"></h1>
+                <p class="reasult__p"></p>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="contact__el">
+            <h1>Contact</h1><br> <br>
+            <button class="contact__close"><i class="fa-solid fa-x"></i></button>
+            <ul>
+                <li><i class="fa-solid fa-phone">&nbsp;&nbsp;538 987 365</i></li><br>
+                <br>
+                <li><i class="fa-solid fa-envelope">&nbsp;&nbsp;fitapp@gmail.com</i></li><br>
+                <br>
+                <li><i class="fa-brands fa-instagram">&nbsp;&nbsp;Fitapp</i></li><br>
+                <br>
+                <li><i class="fa-brands fa-facebook">&nbsp;&nbsp; Fitapp</i></li>
+            </ul>
+        </div>
+        </div>
+     </main>
+    <script src="contact.js"></script>
+    <script src="BMI.js"></script>
+</body>
+</html>

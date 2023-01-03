@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitApp</title>
+    <link rel="stylesheet" href="App.css" />
+    <script
+      src="https://kit.fontawesome.com/3517b05ecb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav__logo"><a href="index.html">FitApp</a></div>
+      <input id="nav__menu-toggle" type="checkbox" />
+      <label class="nav__menu-button-container" for="nav__menu-toggle">
+        <div class="nav__menu-button"></div>
+      </label>
+      <ul class="nav__menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="indexApp.html">App</a></li>
+        <li><a href="indexCalories.html">Calories Calc</a></li>
+        <li><a href="index_BMI.html">BMI Calc</a></li>
+        <li><button class="nav__menu__contact">Contact</button></li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="main__form">
+        <h1>FitApp</h1>
+        <p>Live healthy</p>
+        <div class="main__form__Add">
+          <form class="form">
+            <label for="#">Add your food </label>
+            <input type="text" placeholder="Food" id="input1" />
+            <input type="number" placeholder="Kcal" min="0" id="input2" />
+            <input type="button" value="ADD" id="BtnAdd" />
+          </form>
+        </div>
+      </div>
+      <div class="main__form__All">
+        <h2>List</h2>
+        <ul id="form__ul"></ul>
+      </div>
+      <div class="main__reasult">
+        <i class="fa-solid fa-gear" id="sett"></i>
+        <div class="main__reasult__circle">
+          <p id="cuurencal">0 Kcal</p>
+          <input type="text" readonly value="Add" id="reasult__input" />
+        </div>
+        <div class="main__reasult__add">
+          <label for="#">Add your calories</label>
+          <input type="number" id="input3" placeholder="Add Calories" min="0" />
+          <input type="button" value="Add" id="Btn3" />
+        </div>
+      </div>
+    </main>
+
+    <div class="contact">
+      <div class="contact__el">
+        <h1>Contact</h1>
+        <br />
+        <br />
+        <button class="contact__close"><i class="fa-solid fa-x"></i></button>
+        <ul>
+          <li><i class="fa-solid fa-phone">&nbsp;&nbsp;538 987 365</i></li>
+          <br />
+          <br />
+          <li>
+            <i class="fa-solid fa-envelope">&nbsp;&nbsp;fitapp@gmail.com</i>
+          </li>
+          <br />
+          <br />
+          <li><i class="fa-brands fa-instagram">&nbsp;&nbsp;Fitapp</i></li>
+          <br />
+          <br />
+          <li><i class="fa-brands fa-facebook">&nbsp;&nbsp; Fitapp</i></li>
+        </ul>
+      </div>
+    </div>
+    <script src="contact.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

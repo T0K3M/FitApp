@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calories Calc</title>
+    <link rel="stylesheet" href="main_calories.css">
+    <script src="https://kit.fontawesome.com/3517b05ecb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="nav">
+        <div class="nav__logo"><a href="index.html">FitApp</a></div>
+        <input id="nav__menu-toggle" type="checkbox" />
+        <label class='nav__menu-button-container' for="nav__menu-toggle">
+        <div class='nav__menu-button'></div>
+        </label>
+        <ul class="nav__menu">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="indexApp.html">App</a></li>
+         <li><a href="indexCalories.html">Calories Calc</a></li>
+         <li><a href="index_BMI.html">BMI Calc</a></li>
+         <li><button class="nav__menu__contact">Contact</button></li>
+       </ul>
+     </header>
+
+     <div class="main">
+            <h1>Caloric combustion calculator</h1>
+             <p class="p1"> <i>Enter the data needed for the calculation</i></p>
+        <div class="step__form-1">
+            <form>
+            <span id="span1" class="cc_radio">Woman</span>
+            <span id="span2" class="cc_radio">Man</span> 
+            <input class="input1" type="number" placeholder="Weight in kg" min="1">
+            <input class="input2" type="number" placeholder="Height in cm" min="1"> 
+            <input class="input3" type="number" placeholder="Age" min="1"> 
+            <button class="btn1">Next</button>
+        </form>
+        </div>
+            <div class="step__form-2">
+                <form>
+                <div>
+                    <span value="1" class="form__span" ><i class="fa-solid fa-check" id="Sec1" ></i>Lying in bed</span>
+                    <i class="form_i">A person who, for various reasons (e.g. health), practically does not move during the day.</i>
+                </div>
+                <div>
+                    <span value="2" class="form__span" ><i class="fa-solid fa-check" id="Sec2" ></i>Little active</span>
+                    <i class="form_i">A person who does not train and has a sedentary job (such as an office job).</i>
+                </div>
+                <div>
+                    <span value="3" class="form__span" ><i class="fa-solid fa-check" id="Sec3" ></i>Moderately active</span>
+                    <i class="form_i">A person who has a sedentary job and trains 2-3 times a week or does not train, but has a physical or intense job (such as a waitress).</i>
+                </div>
+                <div>
+                    <span value="4" class="form__span" ><i class="fa-solid fa-check" id="Sec4" ></i>Active</span>
+                    <i class="form_i">A person who has a physical job and additionally trains 2-3 times a week.</i>
+                </div>
+                <div>
+                    <span value="5" class="form__span" ><i class="fa-solid fa-check" id="Sec5" ></i>Very active</span>
+                    <i class="form_i">A person who moves a lot during the day and, in addition, trains intensively 2-4 times a week.</i>
+                </div>
+                <div>
+                    <span value="6" class="form__span" ><i class="fa-solid fa-check" id="Sec6" ></i>High-performance athlete</span>
+                    <i class="form_i">A person who performs several to a dozen training units per week. Sport is her job.</i>
+                </div>
+                <button type="submit" class="btn2">Next</button>
+            </form>
+            </div>    
+          <div class="step__form-3">
+            <p class="form__target">Select your target</p>
+            <select class="form__select">
+                <option selected value="0opt">Select your target</option>
+                <option value="1opt">I want to lose weight</option>
+                <option value="2opt">I want to keep the weight</option>
+                <option value="3opt">I want to increase my body weight</option>
+            </select>
+            <button class="btn3">Calculate</button>
+            </div>
+            <div class="step__final">
+                <p class="form__basic-1"></p>
+                <p class="form__basic-0"><strong class="form__basic-2"></strong></p><br>
+               <p class="form__reasult-1"></p> <br>
+               <p class="p2"><strong class="form__reasult-2"></strong></p>
+                <button class="btn4"><a href="indexCalories.html">Restart Calculate</a></button>
+            </div>
+        </div>
+    
+
+
+     <div class="contact">
+        <div class="contact__el">
+        <h1>Contact</h1><br> <br>
+        <button class="contact__close"><i class="fa-solid fa-x"></i></button>
+        <ul>
+            <li><i class="fa-solid fa-phone">&nbsp;&nbsp;538 987 365</i></li><br>
+            <br>
+            <li><i class="fa-solid fa-envelope">&nbsp;&nbsp;fitapp@gmail.com</i></li><br>
+            <br>
+            <li><i class="fa-brands fa-instagram">&nbsp;&nbsp;Fitapp</i></li><br>
+            <br>
+            <li><i class="fa-brands fa-facebook">&nbsp;&nbsp; Fitapp</i></li>
+        </ul>
+        </div>
+    </div>
+    <script src="contact.js"></script>
+    <script src="Calories.js"></script>
+</body>
+</html>
