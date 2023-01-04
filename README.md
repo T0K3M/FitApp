@@ -4,4 +4,4 @@ The project was written while learning JavaScript and Sass so it's not very well
 
 
 ## Installation
-Clone project code and open :D
+Clone project code and open the page :D
