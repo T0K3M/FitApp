@@ -16,7 +16,8 @@ h2 {
   text-align: center;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   height: 100%;
 }
@@ -31,10 +32,10 @@ html, body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #00BAF0;
+  background-color: #00baf0;
   background: linear-gradient(to left, black, black);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #FFF;
+  color: #fff;
   height: 50px;
   padding: 1em;
 }
@@ -107,7 +108,9 @@ html, body {
   margin-top: 8px;
 }
 
-#nav__menu-toggle:checked + .nav__menu-button-container .nav__menu-button::before {
+#nav__menu-toggle:checked
+  + .nav__menu-button-container
+  .nav__menu-button::before {
   margin-top: 0px;
   transform: rotate(405deg);
 }
@@ -116,7 +119,9 @@ html, body {
   background: rgba(255, 255, 255, 0);
 }
 
-#nav__menu-toggle:checked + .nav__menu-button-container .nav__menu-button::after {
+#nav__menu-toggle:checked
+  + .nav__menu-button-container
+  .nav__menu-button::after {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
@@ -166,7 +171,7 @@ html, body {
 }
 
 .main__container {
-  background-image: url("carrots-g1bc4c6b8c_1920.jpg");
+  background-image: url("../IMG/carrots-g1bc4c6b8c_1920.jpg");
   height: 50vh;
   background-size: cover;
   background-position: center;
@@ -537,4 +542,4 @@ footer P {
   .contact__el li {
     font-size: 10px;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

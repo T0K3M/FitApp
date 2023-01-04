@@ -16,7 +16,8 @@ h2 {
   text-align: center;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   height: 100%;
 }
@@ -31,10 +32,10 @@ html, body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #00BAF0;
+  background-color: #00baf0;
   background: linear-gradient(to left, black, black);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #FFF;
+  color: #fff;
   height: 50px;
   padding: 1em;
 }
@@ -107,7 +108,9 @@ html, body {
   margin-top: 8px;
 }
 
-#nav__menu-toggle:checked + .nav__menu-button-container .nav__menu-button::before {
+#nav__menu-toggle:checked
+  + .nav__menu-button-container
+  .nav__menu-button::before {
   margin-top: 0px;
   transform: rotate(405deg);
 }
@@ -116,7 +119,9 @@ html, body {
   background: rgba(255, 255, 255, 0);
 }
 
-#nav__menu-toggle:checked + .nav__menu-button-container .nav__menu-button::after {
+#nav__menu-toggle:checked
+  + .nav__menu-button-container
+  .nav__menu-button::after {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
@@ -363,7 +368,7 @@ html, body {
 
 .main__panel {
   height: 94.6vh;
-  background-image: url("BMI.jpg");
+  background-image: url("../IMG/BMI.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -573,7 +578,7 @@ html, body {
     width: 75%;
   }
   .main__calc input:nth-child(1),
-.main__calc input:nth-child(2) {
+  .main__calc input:nth-child(2) {
     font-size: 22px;
     padding: 10px 30px 10px 30px;
   }
@@ -590,7 +595,7 @@ html, body {
     font-size: 40px;
   }
   .main__calc input:nth-child(1),
-.main__calc input:nth-child(2) {
+  .main__calc input:nth-child(2) {
     font-size: 22px;
     padding: 10px 40px 10px 40px;
   }
@@ -685,4 +690,4 @@ html, body {
     position: absolute;
     bottom: 5%;
   }
-}/*# sourceMappingURL=main_BMI.css.map */
+} /*# sourceMappingURL=main_BMI.css.map */
